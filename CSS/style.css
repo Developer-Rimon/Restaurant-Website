@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bree Serif', serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+  
+}
+#logo{
+    margin: 10px 25px;
+}
+#logo img{
+    margin: 3px 5px;
+    height: 56px;
+}
+    
+#navbar ul{
+    font-family: 'Bree Serif', serif;
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background: #000000;
+    position: absolute;
+    height: 90%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul li{
+    list-style: none;
+  
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 625px;
+}
+#home::before{
+    content: "";
+    background: url('../img/mainbg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 700px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    font-family: 'Bree Serif', serif;
+    color: white;
+    text-align: center;
+}
+#home p{
+    font-family: 'Bree Serif', serif;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 500px;
+}
+.src{
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    color: #f2f2f2;
+    border: 1px solid orange;
+    border-right: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+.btn2{
+    width: 100px;
+    height: 40px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-size: 15px;
+    border: 2px solid orange;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+.btn2:hover{
+    color: black;
+
+}
+
+/* Services section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid red;
+    padding: 28px;
+    margin: 0px 56px;
+    border-radius: 25px;
+    background: #f2f2f2;
+
+}
+#services .box img{
+    height: 156px;
+    display: block;
+    margin: auto;
+}
+
+/* Client Section */
+#client-section{
+    
+    position: relative;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+    
+}
+#clients img{
+    height: 130px;
+    
+}
+.client-item{
+    padding: 15px;
+    margin: 10px;
+    
+
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../c.jpg');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+  
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('../img/contact.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+
+}
+
+/* Footer Section */
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Clases */
+.h-primary{
+    font-size: 3rem;
+    
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px; 
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: rgb(255, 255, 255);
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
